@@ -1,0 +1,215 @@
+@Metadata.layer: #CORE
+@UI.headerInfo : {
+typeName: 'Purchase Register',
+typeNamePlural: 'Purchase Register'
+}
+annotate entity ZCE_PUR_REG
+    with 
+{
+      @UI.facet: [
+  {
+  id: 'Header',
+  purpose: #STANDARD,
+  type: #IDENTIFICATION_REFERENCE,
+  label: 'Purchase Register',
+  position: 10
+  }
+  ] 
+
+//@UI.selectionField: [{ position: 10 }]
+@UI.lineItem: [{ position: 10 }]
+@UI.identification: [{ position: 10 }]
+@EndUserText.label: 'Posting Date'
+PostingDate;
+
+@UI.lineItem: [{ position: 20 }]
+@UI.identification: [{ position: 20 }]
+@EndUserText.label: 'Document Date'
+DocumentDate;
+
+@UI.selectionField: [{ position: 10 }]
+@UI.lineItem: [{ position: 30 }]
+@UI.identification: [{ position: 30 }]
+@EndUserText.label: 'Supplier Invoice'
+SupplierInvoice;
+
+@UI.selectionField: [{ position: 20 }]
+@UI.lineItem: [{ position: 40 }]
+@UI.identification: [{ position: 40 }]
+@EndUserText.label: 'Supplier Invoice Item'
+SupplierInvoiceItem;
+
+@UI.lineItem: [{ position: 50 }]
+@UI.identification: [{ position: 50 }]
+@EndUserText.label: 'Supplier Inv. No.'
+SupplierInvoiceIDByInvcgParty;
+
+@UI.lineItem: [{ position: 60 }]
+@UI.identification: [{ position: 60 }]
+@EndUserText.label: 'Supplier No.'
+InvoicingParty;
+
+@UI.lineItem: [{ position: 70 }]
+@UI.identification: [{ position: 70 }]
+@EndUserText.label: 'Supplier Name'
+fullname;
+
+@UI.lineItem: [{ position: 80 }]
+@UI.identification: [{ position: 80 }]
+@EndUserText.label: 'Supplier City'
+CityName;
+
+@UI.lineItem: [{ position: 90 }]
+@UI.identification: [{ position: 90 }]
+@EndUserText.label: 'GSTIN No.'
+BPTaxNumber;
+
+@UI.lineItem: [{ position: 100 }]
+@UI.identification: [{ position: 100 }]
+@EndUserText.label: 'Import/Domestic'
+PurchaseOrderType;
+
+@UI.lineItem: [{ position: 110 }]
+@UI.identification: [{ position: 110 }]
+@EndUserText.label: 'Total Amount'
+InvoiceGrossAmount;
+
+@UI.lineItem: [{ position: 120 }]
+@UI.identification: [{ position: 120 }]
+@EndUserText.label: 'Product Type '
+ProductType;
+
+@UI.lineItem: [{ position: 130 }]
+@UI.identification: [{ position: 130 }]
+@EndUserText.label: 'Document Currency'
+DocumentCurrency;
+
+@UI.lineItem: [{ position: 140 }]
+@UI.identification: [{ position: 140 }]
+@EndUserText.label: 'Material'
+PurchaseOrderItemMaterial;
+
+@UI.lineItem: [{ position: 150 }]
+@UI.identification: [{ position: 150 }]
+@EndUserText.label: 'Mat Description'
+PurchaseOrderItemText;
+
+@UI.lineItem: [{ position: 160 }]
+@UI.identification: [{ position: 160 }]
+@EndUserText.label: 'Quantity in PO Unit'
+QuantityInPurchaseOrderUnit;
+
+@UI.lineItem: [{ position: 170 }]
+@UI.identification: [{ position: 170 }]
+@EndUserText.label: 'PO Quantity Unit'
+PurchaseOrderQuantityUnit;
+
+@UI.lineItem: [{ position: 180 }]
+@UI.identification: [{ position: 180 }]
+@EndUserText.label: 'Net Amt'
+SupplierInvoiceItemAmount;
+
+@UI.lineItem: [{ position: 190 }]
+@UI.identification: [{ position: 190 }]
+@EndUserText.label: 'Tax Code'
+TaxCode;
+
+@UI.lineItem: [{ position: 200 }]
+@UI.identification: [{ position: 200 }]
+@EndUserText.label: 'Local Freight Charges'
+locfcharge;
+
+@UI.lineItem: [{ position: 210 }]
+@UI.identification: [{ position: 210 }]
+@EndUserText.label: 'Import Freight Charges'
+impfcharge;
+
+@UI.lineItem: [{ position: 220 }]
+@UI.identification: [{ position: 220 }]
+@EndUserText.label: 'Packing Charges'
+parkcharge;
+
+@UI.lineItem: [{ position: 230 }]
+@UI.identification: [{ position: 230 }]
+@EndUserText.label: 'Insurance Charges'
+inscharge;
+
+@UI.lineItem: [{ position: 240 }]
+@UI.identification: [{ position: 240 }]
+@EndUserText.label: 'Unplanned Delivery Cost'
+SuplrInvcItmUnplndDelivCost;
+
+@UI.lineItem: [{ position: 250 }]
+@UI.identification: [{ position: 250 }]
+@EndUserText.label: 'Other Expenses'
+otherexp;
+
+@UI.lineItem: [{ position: 260 }]
+@UI.identification: [{ position: 260 }]
+@EndUserText.label: 'Custom Duty Charges'
+custdcharge;
+
+@UI.lineItem: [{ position: 270 }]
+@UI.identification: [{ position: 270 }]
+@EndUserText.label: 'SWS Charges'
+swscharge;
+
+@UI.lineItem: [{ position: 280 }]
+@UI.identification: [{ position: 280 }]
+@EndUserText.label: 'CHA Charges'
+chacharge;
+
+@UI.lineItem: [{ position: 290 }]
+@UI.identification: [{ position: 290 }]
+@EndUserText.label: 'Exchange Rate'
+ExchangeRate;
+
+
+//@UI.selectionField: [{ position: 300 }]
+@UI.lineItem: [{ position: 300 }]
+@UI.identification: [{ position: 300 }]
+@EndUserText.label: 'Purchase Order'
+PurchaseOrder;
+
+//@UI.selectionField: [{ position: 310 }]
+@UI.lineItem: [{ position: 310 }]
+@UI.identification: [{ position: 310 }]
+@EndUserText.label: 'Purchase Order Item'
+PurchaseOrderItem;
+
+//@UI.selectionField: [{ position: 320 }]
+@UI.lineItem: [{ position: 320 }]
+@UI.identification: [{ position: 320 }]
+@EndUserText.label: 'Plant'
+Plant;
+    
+
+@UI.lineItem: [{ position: 330 }]
+@UI.identification: [{ position: 330 }]
+@EndUserText.label: 'Fiscal Year'
+FiscalYear;
+
+@UI.lineItem: [{ position: 340 }]
+@UI.identification: [{ position: 340 }]
+@EndUserText.label: 'Total Amount'
+GrandTotalAmount;
+
+@UI.lineItem: [{ position: 350 }]
+@UI.identification: [{ position: 350 }]
+@EndUserText.label: 'Tax code name'
+TaxCodeName;
+
+@UI.lineItem: [{ position: 360 }]
+@UI.identification: [{ position: 360 }]
+@EndUserText.label: 'Product Type Description'
+Name;
+
+@UI.lineItem: [{ position: 370 }]
+@UI.identification: [{ position: 370 }]
+@EndUserText.label: 'Invoice Item Text'
+SupplierInvoiceItemText;
+
+
+    
+    
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Purchase Register",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zpurreg"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CDF3004D0A42CE4C01E4D5B073CEADAF576E44BB_TM",
+    "semanticObject": "zpur_reg",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CDF3004D0A42CE4C01E4D5B073CEADAF576E44BB_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Purchase Register"
+      }
+    }
+  ]
+}
